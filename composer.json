@@ -1,0 +1,9 @@
+{
+  "name": "components/database",
+
+  "autoload": {
+    "psr-4": {
+      "Components\\Database\\": "src/Database/"
+    }
+  }
+}

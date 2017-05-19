@@ -1,0 +1,40 @@
+{
+    "name": "users",
+    "fields": {
+        "id": {
+            "name": "id",
+            "type": {
+                "length": 10,
+                "increments": true,
+                "name": "integer"
+            }
+        },
+        "name": {
+            "name": "name",
+            "type": {
+                "unique": true,
+                "name": "string"
+            }
+        },
+        "password": {
+            "name": "password",
+            "type": {
+                "unique": false,
+                "name": "string"
+            }
+        },
+        "date_created": {
+            "name": "date_created",
+            "type": {
+                "name": "timestamp"
+            }
+        },
+        "date_updated": {
+            "name": "date_updated",
+            "type": {
+                "name": "timestamp"
+            }
+        }
+    },
+    "rows": []
+}
