@@ -1,6 +1,8 @@
 <?php
 namespace Components\Database\Schema;
 
+require_once __DIR__.'/FieldType.php';
+
 class Integer extends FieldType
 {
     public $length;

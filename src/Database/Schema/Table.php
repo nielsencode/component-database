@@ -1,9 +1,13 @@
 <?php
 namespace Components\Database\Schema;
 
-class Table extends FieldType
+require_once __DIR__.'/Field.php';
+
+class Table
 {
     public $name;
+
+    public $primaryKey;
 
     public $fields = [];
 
@@ -11,8 +15,6 @@ class Table extends FieldType
 
     public function __construct($name)
     {
-        parent::__construct();
-
         $this->name = $name;
     }
 
@@ -23,5 +25,10 @@ class Table extends FieldType
         $callback($field);
 
         $this->fields[$name] = $field;
+    }
+
+    public function primaryKey($name)
+    {
+        $this->primaryKey = $name;
     }
 }

@@ -4,6 +4,9 @@ namespace Components\Database\Drivers;
 use Components\Database\Database;
 use Components\Database\Schema\Builder;
 
+require_once __DIR__.'/../Database.php';
+require_once __DIR__.'/../Schema/Builder.php';
+
 class File extends Database
 {
     public $path;

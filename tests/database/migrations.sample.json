@@ -1,0 +1,22 @@
+{
+    "name": "migrations",
+    "primaryKey": "id",
+    "fields": {
+        "id": {
+            "name": "id",
+            "type": {
+                "length": 10,
+                "increments": true,
+                "name": "integer"
+            }
+        },
+        "filename": {
+            "name": "filename",
+            "type": {
+                "unique": true,
+                "name": "string"
+            }
+        }
+    },
+    "rows": []
+}

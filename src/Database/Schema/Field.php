@@ -1,6 +1,10 @@
 <?php
 namespace Components\Database\Schema;
 
+require_once __DIR__.'/Integer.php';
+require_once __DIR__.'/String.php';
+require_once __DIR__.'/Timestamp.php';
+
 class Field
 {
     public $name;

@@ -3,6 +3,9 @@ namespace Components\Database\Schema;
 
 use Components\Database\Database;
 
+require_once __DIR__.'/../Database.php';
+require_once __DIR__.'/Table.php';
+
 class Builder
 {
     public $database;

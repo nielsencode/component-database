@@ -7,6 +7,8 @@ abstract class FieldType
 
     public function __construct()
     {
-        $this->name = strtolower((new \ReflectionClass($this))->getShortName());
+        $reflection = new \ReflectionClass($this);
+
+        $this->name = strtolower($reflection->getShortName());
     }
 }
